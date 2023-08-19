@@ -1,0 +1,65 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/*font weight */
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 100%;
+  cursor: url("../img/cursor/default.png"), auto;
+}
+
+.main__img {
+  height: 250px;
+}
+
+.button:hover {
+  cursor: url("../img/cursor/handpointing.png"), pointer;
+}
+
+/*dark theme*/
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1A1A1A;
+    color: #fff;
+  }
+}
+.header-container .header {
+  align-items: center;
+  color: #fff;
+  background-image: linear-gradient(to right top, #78395d, #6d3d68, #5f4371, #4e4877, #3b4c7a, #204c71, #074965, #004657, #053b3e, #122e28, #162218, #14160c);
+  height: 50vh;
+}
+.header-container .header__title {
+  font-size: 2.6rem;
+}
+
+.drafts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.2rem;
+}
+.drafts__title {
+  font-size: 2rem;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  height: 95%;
+  background-image: url(../../assets/img/astronaut.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+}
+.subscribe__title {
+  font-size: 1.5rem;
+}
+
+.subscribe::before {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+/*# sourceMappingURL=style.css.map */
