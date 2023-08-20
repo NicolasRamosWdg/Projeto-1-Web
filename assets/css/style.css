@@ -17,6 +17,12 @@ body {
   cursor: url("../img/cursor/handpointing.png"), pointer;
 }
 
+.blog-name {
+  background: -webkit-linear-gradient(#7829AC, #6D9ABC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /*dark theme*/
 @media (prefers-color-scheme: dark) {
   body {
@@ -47,11 +53,11 @@ body {
 .header-container .header {
   align-items: center;
   color: #fff;
-  background-image: linear-gradient(to right top, #78395d, #6d3d68, #5f4371, #4e4877, #3b4c7a, #204c71, #074965, #004657, #053b3e, #122e28, #162218, #14160c);
+  background-image: linear-gradient(to right top, #3d2381, #302377, #30144e, #380c3c, #260d00, #180d00, #090907);
   height: 50vh;
 }
 .header-container .header__title {
-  font-size: 2.6rem;
+  font-size: 2.3rem;
 }
 
 .drafts {
