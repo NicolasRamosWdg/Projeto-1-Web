@@ -1,13 +1,22 @@
+/*colors*/
 $white: #fff;
+$black: #000;
 $black-lighter: #1A1A1A;
+$blue-space: #1D5178;
+$pink-space: #78395D;
 
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 $roboto: 'Roboto', sans-serif;
 
-/*font weight */
 
+/*font weight */
+$fw-100: 100;
+$fw-300: 300;
+$fw-400: 400;
+$fw-500: 500;
+$fw-700: 700;
+$fw-900: 900;
 
 
 body {
@@ -23,7 +32,7 @@ body {
     }
 }
 
-.button:hover {
+.button:hover, a:hover {
     cursor: url("../img/cursor/handpointing.png"), pointer;
 }
 
@@ -32,5 +41,30 @@ body {
     body {
         background-color: $black-lighter;
         color: $white;
+    }
+
+    .navbar-brand, 
+    .nav-link, 
+    .nav-link:hover, 
+    .navbar-nav .nav-link.active, 
+    .navbar-nav .nav-link.show {
+        color: $white;
+    }
+
+    .card,
+    .card .button {
+        color: $white;
+    }
+
+    .card-body {
+        background-color: $black;
+    }
+
+    .card .button {
+        border-color: $white;
+    }
+
+    .card .button:hover {
+        background-color: $blue-space;
     }
 }
