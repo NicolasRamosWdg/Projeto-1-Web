@@ -1,9 +1,7 @@
 .header-container {
     .header {
-        align-items: center;
-        color: $white;
+        color: var(--bs-white);
         background-image: linear-gradient(to right top, #3d2381, #302377, #30144e, #380c3c, #260d00, #180d00, #090907);
-        height: 50vh;
 
         &__title {
             font-size: 2.3rem;

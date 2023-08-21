@@ -1,7 +1,4 @@
 /*colors*/
-$white: #fff;
-$black: #000;
-$black-lighter: #1A1A1A;
 $blue-space: #1D5178;
 $pink-space: #78395D;
 
@@ -42,12 +39,17 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+.section-subscribe {
+    margin: 5rem 0 3rem;
+    padding: 5rem 0;
+}
+
 
 /*dark theme*/
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: $black-lighter;
-        color: $white;
+        background-color: var(--bs-dark);
+        color: var(--bs-white);
     }
 
     .navbar-brand, 
@@ -55,23 +57,31 @@ body {
     .nav-link:hover, 
     .navbar-nav .nav-link.active, 
     .navbar-nav .nav-link.show {
-        color: $white;
+        color: var(--bs-white);
     }
 
     .card,
     .card .button {
-        color: $white;
+        color: var(--bs-white);
+    }
+
+    .card, .footer {
+        border-color: var(--bs-black) !important;
     }
 
     .card-body {
-        background-color: $black;
+        background-color: var(--bs-black);
     }
 
     .card .button {
-        border-color: $white;
+        border-color: var(--bs-white);
     }
 
     .card .button:hover {
         background-color: $blue-space;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
 }

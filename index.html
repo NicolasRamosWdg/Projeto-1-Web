@@ -10,12 +10,12 @@
         <title>AstroGuias</title>
     </head>
     <body>
-        <main class="main py-3 px-3 me-5">
+        <main class="main py-3 px-3 me-xl-5 me-xxl-5">
             <div class="row">
-                <div class="col col-9">
+                <div class="col col-xl-9 col-xxl-9">
                     <section class="d-flex flex-column row-gap-3">
                         <div class="header-container d-flex flex-column row-gap-3">
-                            <nav class="navbar navbar-expand-lg border border-secondary-subtle rounded p-2">
+                            <nav class="navbar navbar-expand-lg rounded p-2">
                                 <a class="navbar-brand blog-name" href="#"><img src="./assets/img/favicon.png" alt="Planeta Saturno">AstroGuias</a>
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
@@ -53,7 +53,7 @@
                                     </ul>
                                 </div>
                             </nav>
-                            <header class="header border border-secondary-subtle rounded p-5 text-center d-flex flex-column row-gap-3">
+                            <header class="header rounded p-5 text-center d-flex flex-column row-gap-3">
                                 <h1 class="header__title blog-name"><img src="./assets/img/favicon.png" alt="Planeta Saturno" style="width: 3rem;">AstroGuias</h1>
                                 <span class="header__subtitle">
                                     Desbrave as maravilhas do universo através de nossos artigos envolventes e informativos. Explore planetas distantes, mergulhe em descobertas cósmicas emocionantes e embarque em uma jornada para entender os segredos do espaço profundo. Seja você um astrônomo amador ou um apaixonado por ciência, você encontrará inspiração e conhecimento aqui. Bem-vindo à sua porta de entrada para o cosmos!
@@ -61,11 +61,11 @@
                             </header>
                         </div>
     
-                        <div class="main__drafts drafts container mt-4">
+                        <div class="main__drafts drafts container-fluid mt-4 mx-0 px-0">
                             <h2 class="drafts__title">Destaques</h2>
-                            <div class="row row-cols-2 g-5">
-                                <div class="col">
-                                    <div class="card" style="height: 33rem;">
+                            <div class="row g-2">
+                                <div class="col-12 col-md-6 col-xl-4">
+                                    <div class="card">
                                         <img src="./assets/img/jupiter-moons.jpg" class="card-img-top main__img" alt="Luas de Júpiter">
                                         <div class="card-body">
                                           <h5 class="card-title">O Mistério das Luas de Júpiter: Descobertas e Surpresas</h5>
@@ -76,8 +76,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col">
-                                    <div class="card" style="height: 33rem;">
+                                <div class="col-12 col-md-6 col-xl-4">
+                                    <div class="card">
                                         <img src="./assets/img/mercury.jpg" class="card-img-top main__img" alt="Planeta Mercúrio">
                                         <div class="card-body">
                                           <h5 class="card-title">Mercúrio: O Planeta Mais Próximo do Sol</h5>
@@ -88,8 +88,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col">
-                                    <div class="card" style="height: 33rem;">
+                                <div class="col-12 col-md-6 col-xl-4">
+                                    <div class="card">
                                         <img src="./assets/img/distant-galaxy.jpg" class="card-img-top main__img" alt="Galáxia Distante">
                                         <div class="card-body">
                                           <h5 class="card-title">Galáxias Distantes: Viagens pelo Universo Profundo</h5>
@@ -100,8 +100,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col">
-                                    <div class="card" style="height: 33rem;">
+                                <div class="col-12 col-md-6 col-xl-4">
+                                    <div class="card">
                                         <img src="./assets/img/exoplanets.png" class="card-img-top main__img" alt="Exoplanetas">
                                         <div class="card-body">
                                           <h5 class="card-title">Em Busca de Mundos Alienígenas: A Fascinação dos Exoplanetas</h5>
@@ -112,8 +112,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col">
-                                    <div class="card" style="height: 33rem;">
+                                <div class="col-12 col-md-6 col-xl-4">
+                                    <div class="card">
                                         <img src="./assets/img/supernova.jpg" class="card-img-top main__img" alt="Supernova">
                                         <div class="card-body">
                                           <h5 class="card-title">Supernovas: Explosões Estelares Além da Imaginação</h5>
@@ -123,9 +123,9 @@
                                           <a href="#" class="btn btn-outline-dark button">Acessar</a>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col">
-                                    <div class="card" style="height: 33rem;">
+                                </div> 
+                                <div class="col-12 col-md-6 col-xl-4">
+                                    <div class="card">
                                         <img src="./assets/img/black-hole.jpg" class="card-img-top main__img" alt="Buraco Negro">
                                         <div class="card-body">
                                           <h5 class="card-title">Buracos Negros: Os Devoradores de Luz do Universo</h5>
@@ -138,15 +138,26 @@
                                 </div>
                             </div>
                         </div>
+
+                        <section class="section section-subscribe d-xl-none d-xxl-none">
+                            <div class="section-subscribe__title-container mb-5">
+                                <h3 class="section-subscribe__title">Inscreva-se</h3>
+                                <span class="section-subscribe__subtitle">Informe seu e-mail para receber novidades</span>
+                            </div>
+                            <form class="section-subscribe__form d-flex flex-column row-gap-3">
+                                <input class="form-control mb-2" placeholder="E-mail"/>
+                                <button class="btn btn-outline-light mx-auto button">Me inscrever</button>
+                            </form>
+                        </section>
     
-                        <footer class="footer border border-secondary-subtle rounded p-4 d-flex justify-content-between mx-2">
+                        <footer class="footer rounded p-4 d-flex justify-content-between">
                             <span class="blog-name"><img src="./assets/img/favicon.png" alt="Planeta Saturno">AstroGuias</span>
                             <span>Copyright &copy; 2023</span>
                         </footer>
                     </section>
                 </div>
-                <div class="col col-3">
-                    <aside class="subscribe border border-secondary-subtle rounded pt-5 px-3 position-fixed">
+                <div class="col d-none d-xl-inline">
+                    <aside class="subscribe rounded pt-5 px-3 position-fixed">
                         <div class="subscribe__title-container">
                             <h3 class="subscribe__title">Inscreva-se</h3>
                             <span class="subscribe__subtitle">Informe seu e-mail para receber novidades</span>

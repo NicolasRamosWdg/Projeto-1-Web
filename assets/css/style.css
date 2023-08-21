@@ -23,38 +23,47 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.section-subscribe {
+  margin: 5rem 0 3rem;
+  padding: 5rem 0;
+}
+
 /*dark theme*/
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #1A1A1A;
-    color: #fff;
+    background-color: var(--bs-dark);
+    color: var(--bs-white);
   }
   .navbar-brand,
 .nav-link,
 .nav-link:hover,
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
-    color: #fff;
+    color: var(--bs-white);
   }
   .card,
 .card .button {
-    color: #fff;
+    color: var(--bs-white);
+  }
+  .card, .footer {
+    border-color: var(--bs-black) !important;
   }
   .card-body {
-    background-color: #000;
+    background-color: var(--bs-black);
   }
   .card .button {
-    border-color: #fff;
+    border-color: var(--bs-white);
   }
   .card .button:hover {
     background-color: #1D5178;
   }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
 }
 .header-container .header {
-  align-items: center;
-  color: #fff;
+  color: var(--bs-white);
   background-image: linear-gradient(to right top, #3d2381, #302377, #30144e, #380c3c, #260d00, #180d00, #090907);
-  height: 50vh;
 }
 .header-container .header__title {
   font-size: 2.3rem;
@@ -68,6 +77,14 @@ body {
 .drafts__title {
   font-size: 2rem;
 }
+.drafts .card {
+  border: 1px solid var(--bs-gray-200);
+  height: 100%;
+}
+
+.footer {
+  border: 1px solid var(--bs-gray-200);
+}
 
 .subscribe {
   display: flex;
@@ -77,7 +94,8 @@ body {
   background-image: url(../../assets/img/astronaut.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  color: #fff;
+  color: var(--bs-white);
+  width: 25%;
 }
 .subscribe__title {
   font-size: 1.5rem;

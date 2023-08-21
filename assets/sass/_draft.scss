@@ -6,4 +6,9 @@
     &__title {
         font-size: 2rem;
     }
+
+    .card {
+        border: 1px solid var(--bs-gray-200);
+        height: 100%;
+    }
 }
