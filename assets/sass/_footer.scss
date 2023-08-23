@@ -1,3 +1,10 @@
 .footer {
     border: 1px solid var(--bs-gray-200);
 }
+
+.main-talk-to-us {
+    .footer {
+        margin-top: 3rem;
+        border: none;
+    }
+}

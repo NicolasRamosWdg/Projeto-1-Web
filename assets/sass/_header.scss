@@ -7,4 +7,8 @@
             font-size: 2.3rem;
         }
     }
+
+    .nav-link:hover {
+        font-weight: $fw-700;
+    }
 }
