@@ -1,0 +1,20 @@
+.talk-to-us {
+    &__page-title {
+        font-size: 2rem;
+    }
+
+    .form {
+        &__btn {
+            border: 1px solid var(--bs-border-color);
+        }
+
+        &__btn:hover {
+            background-color: var(--bs-border-color);
+            color: var(--bs-dark);
+        }
+
+        &__input {
+            padding: .7rem;
+        }
+    }
+}
