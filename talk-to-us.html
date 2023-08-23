@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="./assets/js/head.js"></script>
+        <title>Fale Conosco</title>
+    </head>
+    <body>
+        <main class="main main-talk-to-us pt-md-5 pb-md-2 p-md-5">
+            <script src="./assets/js/navbar.js"></script>
+
+            <section class="section talk-to-us px-3 py-5 p-md-5">
+                <h1 class="talk-to-us__page-title">Fale Conosco</h1>
+                <p class="talk-to-us__page-descr mb-5">Para enviar sua solicitação, dúvida, sugestão ou elogios, por favor, preencha os campos abaixo:</p>
+    
+                <form class="form needs-validation talk-to-us__form row g-3" id="form2" action="./index.html" novalidate>
+                    <div class="col-12">
+                        <input class="form-control form__input" type="text" name="inputName" id="inputName" placeholder="Nome completo" required>
+                        <div class="invalid-feedback" id="invalid-feedback-name"></div>
+                    </div>
+    
+                    <div class="col-6">
+                        <input class="form-control form__input" type="text" name="inputEmail" id="inputEmail" placeholder="E-mail" required>
+                        <div class="invalid-feedback" id="invalid-feedback-email"></div>
+                    </div>
+    
+                    <div class="col-6">
+                        <input class="form-control form__input" type="text" name="inputCell" id="inputCell" placeholder="Celular">
+                        <div class="invalid-feedback" id="invalid-feedback-cell"></div>
+                    </div>
+    
+                    <div class="col-12">
+                        <input class="form-control form__input" type="text" name="inputSubject" id="inputSubject" placeholder="Informe o assunto" required>
+                        <div class="invalid-feedback" id="invalid-feedback-subject"></div>
+                    </div>
+    
+                    <div class="col-12">
+                        <textarea class="form-control form__input" name="inputMessage" id="inputMessage" rows="10" placeholder="Deixe aqui sua dúvida" required></textarea>
+                        <div class="invalid-feedback" id="invalid-feedback-message"></div>
+                    </div>
+                    
+                    <div class="col-12">
+                        <button type="submit" class="btn">Enviar</button>
+                    </div>
+                </form>
+
+                <div class="modal" tabindex="-1" id="formModal">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <p class="text-secondary text-center m-0">Formulário enviado com sucesso <img src="./assets/img/favicon.png" alt="Planeta Saturno"><br>Assim que possível retornaremos sua solicitação</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </section>
+    
+            <script src="./assets/js/footer.js"></script>
+        </main>
+        
+        <script src="./assets/js/script2.js"></script>
+    </body>
+</html>
