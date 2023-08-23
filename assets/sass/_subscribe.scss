@@ -2,12 +2,13 @@
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
-    height: 95%;
     background-image: url(../../assets/img/astronaut.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--bs-white);
-    width: 25%;
+    height: 98%;
+    width: auto;
+    margin-top: 6px;
     
     &__title {
         font-size: 1.5rem;
