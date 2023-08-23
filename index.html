@@ -102,9 +102,11 @@
                                 <h3 class="section-subscribe__title">Inscreva-se</h3>
                                 <span class="section-subscribe__subtitle">Informe seu e-mail para receber novidades</span>
                             </div>
-                            <form class="section-subscribe__form d-flex flex-column row-gap-3">
-                                <input class="form-control mb-2" placeholder="E-mail"/>
-                                <button class="btn btn-outline-light mx-auto button">Me inscrever</button>
+                            <form class="form needs-validation section-subscribe__form d-flex flex-column row-gap-3" id="form2" novalidate>
+                                <input class="form-control mb-2" id="email2" name="email2" placeholder="E-mail"/>
+                                <div class="invalid-feedback" id="invalid-feedback-email2"></div>
+
+                                <button type="submit" class="btn btn-outline-light mx-auto button">Me inscrever</button>
                             </form>
                         </section>
     

@@ -141,6 +141,48 @@ jQuery(function($) {
         }
     }
 
+    /* form subscribe mobile */
+    $('#form2').on('submit', (e) => {
+        e.preventDefault()
+
+        validateEmail2($('#email2'))
+
+        if ($('#email2').hasClass('is-valid')) {
+            setTimeout(function() { 
+                document.getElementById('form2').submit()
+            }, 2000)
+            $('#subscribeModal').modal('show')
+        } else {
+            e.preventDefault()
+        }
+    })
+
+    $('#form2').on('input', (e) => {
+        e.preventDefault()
+
+        validateEmail2($('#email2'))
+    })
+
+    function validateEmail2(element) {
+        if (element.val().length <= 0) {
+            isInvalid(element)
+            $('#invalid-feedback-email2').text('Campo Obrigatório!')
+        } else {
+            isValid(element)
+        }
+
+        if (element.val().length > 0) {
+            if (element.val().match(/^\w+\@\w+\.\D+$/)) {
+                isValid(element)
+            } else {
+                isInvalid(element)
+                $('#invalid-feedback-email2').text('Exemplo: meuemail@mail.com')
+            }
+        }
+    }
+
+    
+    /* funções validação */
     function isInvalid(element) {
         element.addClass('is-invalid')
         element.removeClass('is-valid')
