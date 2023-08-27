@@ -1,0 +1,35 @@
+.article {
+    padding: 8rem 13rem;
+
+    &__title {
+        font-size: 2.5rem;
+        font-weight: $fw-900;
+    }
+
+    &__content {
+        font-size: 1.2rem;
+    }
+
+    &__author-img {
+        max-width: 37px;
+        height: auto;
+    }
+
+    &__date-time {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .article {
+        padding: 6rem 2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .article {
+        &__title {
+            font-size: 2rem;
+        }
+    }
+}
