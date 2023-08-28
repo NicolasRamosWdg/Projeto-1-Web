@@ -18,6 +18,22 @@
     &__date-time {
         font-size: .9rem;
     }
+
+    .btn-like:hover, .btn-comment:hover {
+        cursor: url("../img/cursor/handpointing.png"), pointer;
+        transform: scale(1.1);
+    }
+}
+
+.modal-header {
+    &__title {
+        font-size: 1.8rem;
+    }
+}
+
+.user-comment {
+    border-color: rgba(0,0,0,0.3);
+    padding: 2rem;
 }
 
 @media (max-width: 992px) {

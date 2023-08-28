@@ -60,10 +60,18 @@ body {
     border-color: var(--bs-light);
     color: var(--bs-light); }
 
-  .modal-body {
+  .modal-header, .modal-body {
     background-color: var(--bs-dark); }
-    .modal-body .text-secondary {
-      color: var(--bs-light) !important; } }
+    .modal-header .text-secondary, .modal-body .text-secondary {
+      color: var(--bs-light) !important; }
+
+  .btn-commentary, .btn-talk-to-us {
+    color: var(--bs-light);
+    border-color: var(--bs-light); }
+
+  .btn-commentary:hover, .btn-talk-to-us:hover {
+    color: var(--bs-black);
+    background-color: var(--bs-light); } }
 .header-container .header {
   color: var(--bs-white);
   background-image: linear-gradient(to right top, #3d2381, #302377, #30144e, #380c3c, #260d00, #180d00, #090907); }
@@ -147,6 +155,16 @@ body {
     height: auto; }
   .article__date-time {
     font-size: .9rem; }
+  .article .btn-like:hover, .article .btn-comment:hover {
+    cursor: url("../img/cursor/handpointing.png"), pointer;
+    transform: scale(1.1); }
+
+.modal-header__title {
+  font-size: 1.8rem; }
+
+.user-comment {
+  border-color: rgba(0, 0, 0, 0.3);
+  padding: 2rem; }
 
 @media (max-width: 992px) {
   .article {

@@ -95,11 +95,21 @@ body {
         }
     }
 
-    .modal-body {
+    .modal-header, .modal-body {
         background-color: var(--bs-dark);
         
         .text-secondary {
             color: var(--bs-light) !important;
         }
+    }
+
+    .btn-commentary, .btn-talk-to-us {
+        color: var(--bs-light);
+        border-color: var(--bs-light);
+    }
+
+    .btn-commentary:hover, .btn-talk-to-us:hover {
+        color: var(--bs-black);
+        background-color: var(--bs-light);
     }
 }
