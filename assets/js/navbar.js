@@ -1,4 +1,4 @@
-let navbar = `<nav class="navbar navbar-expand-lg rounded p-2 mt-3 mx-4 mt-lg-0 mx-lg-0">
+let navbar = `<nav class="navbar navbar-expand-lg rounded p-2 mt-3 mt-lg-0">
     <a class="navbar-brand blog-name" href="./index.html"><img src="./assets/img/favicon.png" alt="Planeta Saturno">AstroGuias</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
