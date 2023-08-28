@@ -14,6 +14,25 @@ let article = `<section class="section article">
 </div>
 <p class="article__text" id="text"></p>
 </div>
-</section>`
+</section>
+<div>
+    <button type="button" class="btn like"></button>
+    <
+</div>
+`
 
 document.write(article)
+
+
+/**
+ * 
+ * <div class="container-comments">
+    <p class="article-sections">Comments</p>
+    <div id="qnt-comments"></div>
+</div>
+<div id="users-comments"></div>
+<div class="second-divisor"></div>
+<p class="article-sections">Leave a Reply</p>
+<textarea rows="4" cols="97" placeholder="Enter your comment here..." id="enter-comment"></textarea>
+<button type="submit" class="btn-submit" onclick="submit()">Submit</button>
+ */

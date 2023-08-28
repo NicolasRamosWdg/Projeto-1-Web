@@ -193,3 +193,22 @@ jQuery(function($) {
         element.removeClass('is-invalid')
     }
 })
+
+
+
+let qntComments = 0;
+function submit() {
+    let userComment = document.getElementById("enter-comment").value;
+    let textArea = document.getElementById("enter-comment");
+    let divComment = document.getElementById("users-comments");
+    let divQntComment = document.getElementById("qnt-comments");
+    
+    if (/\S/.test(userComment)) {
+        qntComments++;
+        divQntComment.style.visibility = "visible";
+        divQntComment.innerText = qntComments;
+        divComment.innerHTML += `<p class="user-comment">${userComment}</p>`
+        divComment.innerHTML += `<div class="divisor"></div>`
+        textArea.value = "";
+    } 
+}
