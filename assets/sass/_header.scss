@@ -11,14 +11,14 @@
     .nav-link:hover {
         font-weight: $fw-700;
     }
-
-    .dropdown-item {
-        width: max-content;
-    }
 }
 
-@media (max-width: 768px) {
-    .dropdown-item {
+.dropdown-menu {
+    width: max-content;
+}
+
+@media (max-width: 990px) {
+    .dropdown-menu {
         width: unset !important;
     }
 }

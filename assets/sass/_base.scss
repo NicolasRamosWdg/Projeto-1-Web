@@ -38,8 +38,16 @@ body {
 }
 
 .section-subscribe {
-    margin: 7rem 0 9rem;
-    padding: 5rem 0;
+    margin: 10rem 0 11rem;
+}
+
+textarea {
+    resize: none;
+}
+
+.main-talk-to-us .navbar,
+.main-article .navbar {
+    margin: 1.9rem .7rem .7rem !important;
 }
 
 /*dark theme*/
@@ -95,7 +103,8 @@ body {
         }
     }
 
-    .modal-header, .modal-body {
+    .modal-header, 
+    .modal-body {
         background-color: var(--bs-dark);
         
         .text-secondary {
@@ -103,13 +112,26 @@ body {
         }
     }
 
-    .btn-commentary, .btn-talk-to-us {
+    .btn-commentary, 
+    .btn-talk-to-us,
+    .section-subscribe .btn {
         color: var(--bs-light);
         border-color: var(--bs-light);
     }
 
-    .btn-commentary:hover, .btn-talk-to-us:hover {
+    .btn-commentary:hover, 
+    .btn-talk-to-us:hover,
+    .section-subscribe .btn:hover {
         color: var(--bs-black);
         background-color: var(--bs-light);
+    }
+
+    .user-comment, 
+    .modal-body .form {
+        border-color: rgba(211, 211, 211, 0.2) !important;
+    }
+
+    .btn-close {
+        filter: var(--bs-btn-close-white-filter);
     }
 }

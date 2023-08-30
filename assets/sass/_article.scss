@@ -1,13 +1,14 @@
 .article {
-    padding: 8rem 13rem;
+    padding: 8rem 10rem;
 
     &__title {
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: $fw-900;
     }
 
     &__content {
         font-size: 1.2rem;
+        margin: auto 2rem;
     }
 
     &__author-img {
@@ -29,16 +30,29 @@
     &__title {
         font-size: 1.8rem;
     }
+
+    &__qnt-comments {
+        font-size: 1rem;
+        top: 10%;
+    }
+}
+
+.modal-body .form, .user-comment {
+    border-color: rgba(0,0,0,0.3);
 }
 
 .user-comment {
-    border-color: rgba(0,0,0,0.3);
     padding: 2rem;
 }
 
 @media (max-width: 992px) {
     .article {
         padding: 6rem 2rem;
+
+        &__content {
+            font-size: 1.2rem;
+            margin: auto 1rem;
+        }
     }
 }
 

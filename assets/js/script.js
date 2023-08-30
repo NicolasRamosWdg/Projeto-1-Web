@@ -66,16 +66,16 @@ jQuery(function($) {
                     isValid(element)
                 }
             } else if ((value.length > 0) && (key == 'inputSubject')) {
-                if (value.length < 6) {
+                if (value.length < 3) {
                     isInvalid(element)
-                    $('#invalid-feedback-subject').text('Número mínimo de caracteres: 6')
+                    $('#invalid-feedback-subject').text('Número mínimo de caracteres: 3')
                 } else {
                     isValid(element)
                 }
             } else if ((value.length > 0) && (key == 'inputMessage')) {
-                if (value.length < 20) {
+                if (value.length < 70) {
                     isInvalid(element)
-                    $('#invalid-feedback-message').text('Número mínimo de caracteres: 20')
+                    $('#invalid-feedback-message').text('Número mínimo de caracteres: 70')
                 } else {
                     isValid(element)
                 }
@@ -225,10 +225,11 @@ function leaveCommentary() {
         qntComments++;
         qntComment.style.visibility = "visible"
         qntComment.innerText = qntComments
-        userComment.innerHTML += `<p class="user-comment border border-start-0 border-end-0 border-top-0">${textAreaValue}</p>`
+        userComment.innerHTML += `<p class="user-comment border border-start-0 border-end-0 border-top-0 ps-4">${textAreaValue}</p>`
         userComment.style.cssText = `
-            margin-top: 4rem;
+            margin-top: 2rem;
             display: block !important;
+            white-space: pre-wrap;
         `
         textArea.value = ""
     } 
