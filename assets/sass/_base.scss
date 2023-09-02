@@ -45,9 +45,11 @@ textarea {
     resize: none;
 }
 
-.main-talk-to-us .navbar,
-.main-article .navbar {
-    margin: 1.9rem .7rem .7rem !important;
+@media (max-width: 990px) {
+    .main-talk-to-us .navbar,
+    .main-article .navbar {
+        margin: 1.9rem .9rem 1.9rem !important;
+    }
 }
 
 /*dark theme*/

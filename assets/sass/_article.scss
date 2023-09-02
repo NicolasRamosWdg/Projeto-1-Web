@@ -1,5 +1,26 @@
 .article {
-    padding: 8rem 10rem;
+    &__banner {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 55vh;
+        width: 100%;
+
+        @media (max-width: 1300px) {
+            height: 35vh;
+        }
+
+        @media (max-width: 800px) {
+            height: 25vh;
+        }
+
+        @media (max-width: 450px) {
+            height: 18vh;
+        }
+    }
+
+    &__body {
+        padding: 5rem 10rem 8rem;
+    }
 
     &__title {
         font-size: 2rem;
@@ -45,9 +66,19 @@
     padding: 2rem;
 }
 
+@media (min-width: 992px) {
+    .main-article {
+        .navbar {
+            padding: 3.4rem !important;
+        }
+    }
+}
+
 @media (max-width: 992px) {
     .article {
-        padding: 6rem 2rem;
+        &__body {
+            padding: 3rem 2rem 6rem;
+        }
 
         &__content {
             font-size: 1.2rem;

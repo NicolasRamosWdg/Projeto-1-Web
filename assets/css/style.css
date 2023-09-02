@@ -23,10 +23,10 @@ body {
 textarea {
   resize: none; }
 
-.main-talk-to-us .navbar,
-.main-article .navbar {
-  margin: 1.9rem .7rem .7rem !important; }
-
+@media (max-width: 990px) {
+  .main-talk-to-us .navbar,
+  .main-article .navbar {
+    margin: 1.9rem .9rem 1.9rem !important; } }
 /*dark theme*/
 @media (prefers-color-scheme: dark) {
   body {
@@ -168,22 +168,36 @@ textarea {
 .talk-to-us .form__input {
   padding: .7rem; }
 
-.article {
-  padding: 8rem 10rem; }
-  .article__title {
-    font-size: 2rem;
-    font-weight: 900; }
-  .article__content {
-    font-size: 1.2rem;
-    margin: auto 2rem; }
-  .article__author-img {
-    max-width: 37px;
-    height: auto; }
-  .article__date-time {
-    font-size: .9rem; }
-  .article .btn-like:hover, .article .btn-comment:hover {
-    cursor: url("../img/cursor/handpointing.png"), pointer;
-    transform: scale(1.1); }
+.article__banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 55vh;
+  width: 100%; }
+  @media (max-width: 1300px) {
+    .article__banner {
+      height: 35vh; } }
+  @media (max-width: 800px) {
+    .article__banner {
+      height: 25vh; } }
+  @media (max-width: 450px) {
+    .article__banner {
+      height: 18vh; } }
+.article__body {
+  padding: 5rem 10rem 8rem; }
+.article__title {
+  font-size: 2rem;
+  font-weight: 900; }
+.article__content {
+  font-size: 1.2rem;
+  margin: auto 2rem; }
+.article__author-img {
+  max-width: 37px;
+  height: auto; }
+.article__date-time {
+  font-size: .9rem; }
+.article .btn-like:hover, .article .btn-comment:hover {
+  cursor: url("../img/cursor/handpointing.png"), pointer;
+  transform: scale(1.1); }
 
 .modal-header__title {
   font-size: 1.8rem; }
@@ -197,12 +211,15 @@ textarea {
 .user-comment {
   padding: 2rem; }
 
+@media (min-width: 992px) {
+  .main-article .navbar {
+    padding: 3.4rem !important; } }
 @media (max-width: 992px) {
-  .article {
-    padding: 6rem 2rem; }
-    .article__content {
-      font-size: 1.2rem;
-      margin: auto 1rem; } }
+  .article__body {
+    padding: 3rem 2rem 6rem; }
+  .article__content {
+    font-size: 1.2rem;
+    margin: auto 1rem; } }
 @media (max-width: 400px) {
   .article__title {
     font-size: 2rem; } }
