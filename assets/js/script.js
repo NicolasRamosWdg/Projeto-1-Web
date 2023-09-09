@@ -3,7 +3,7 @@ jQuery(function($) {
     $('#inputCell').mask('(00)00000-0000')
 
     /* form talk to us */
-    $('#form2').on('submit', (e) => {
+    $('#formTalkToUs').on('submit', (e) => {
         e.preventDefault()
 
         let form = $('#form2')[0]
@@ -21,7 +21,7 @@ jQuery(function($) {
 
         if (flag == 0) {
             setTimeout(function() { 
-                document.getElementById('form2').submit()
+                document.getElementById('formTalkToUs').submit()
             }, 2000)
             $('#formModal').modal('show')
         } else {
@@ -29,10 +29,10 @@ jQuery(function($) {
         }
     })
 
-    $('#form2').on('input', (e) => {
+    $('#formTalkToUs').on('input', (e) => {
         e.preventDefault()
     
-        let form = $('#form2')[0]
+        let form = $('#formTalkToUs')[0]
         let formData = new FormData(form)
         validate(formData)
     })
@@ -102,14 +102,16 @@ jQuery(function($) {
     }
 
     /* form subscribe */
-    $('#form').on('submit', (e) => {
+    $('#formSubscribe').on('submit', (e) => {
         e.preventDefault()
+
+        let form = $('#formSubscribe')[0]
 
         validateEmail($('#email'))
 
         if ($('#email').hasClass('is-valid')) {
             setTimeout(function() { 
-                document.getElementById('form').submit()
+                document.getElementById('#formSubscribe').submit()
             }, 2000)
             $('#subscribeModal').modal('show')
         } else {
@@ -117,7 +119,7 @@ jQuery(function($) {
         }
     })
 
-    $('#form').on('input', (e) => {
+    $('#formSubscribe').on('input', (e) => {
         e.preventDefault()
 
         validateEmail($('#email'))
@@ -142,14 +144,14 @@ jQuery(function($) {
     }
 
     /* form subscribe mobile */
-    $('#form2').on('submit', (e) => {
+    $('#formSubscribeMob').on('submit', (e) => {
         e.preventDefault()
 
         validateEmail2($('#email2'))
 
         if ($('#email2').hasClass('is-valid')) {
             setTimeout(function() { 
-                document.getElementById('form2').submit()
+                document.getElementById('formSubscribeMob').submit()
             }, 2000)
             $('#subscribeModal').modal('show')
         } else {
@@ -157,7 +159,7 @@ jQuery(function($) {
         }
     })
 
-    $('#form2').on('input', (e) => {
+    $('#formSubscribeMob').on('input', (e) => {
         e.preventDefault()
 
         validateEmail2($('#email2'))
