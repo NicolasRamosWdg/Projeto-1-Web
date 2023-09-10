@@ -107,7 +107,7 @@ jQuery(function($) {
 
         if ($('#email').hasClass('is-valid')) {
             setTimeout(function() { 
-                document.getElementById('#formSubscribe').submit()
+                document.getElementById('formSubscribe').submit()
             }, 2000)
             $('#subscribeModal').modal('show')
         } else {
