@@ -6,7 +6,7 @@ jQuery(function($) {
     $('#formTalkToUs').on('submit', (e) => {
         e.preventDefault()
 
-        let form = $('#form2')[0]
+        let form = $('#formTalkToUs')[0]
         let formData = new FormData(form)
         validate(formData)
 
@@ -58,44 +58,42 @@ jQuery(function($) {
                 isValid(element)
             }
 
-            if ((value.length > 0) && (key == 'inputName')) {
-                if (value.length < 10) {
-                    isInvalid(element)
-                    $('#invalid-feedback-name').text('Número mínimo de caracteres: 10')
-                } else {
-                    isValid(element)
-                }
-            } else if ((value.length > 0) && (key == 'inputSubject')) {
-                if (value.length < 3) {
-                    isInvalid(element)
-                    $('#invalid-feedback-subject').text('Número mínimo de caracteres: 3')
-                } else {
-                    isValid(element)
-                }
-            } else if ((value.length > 0) && (key == 'inputMessage')) {
-                if (value.length < 70) {
-                    isInvalid(element)
-                    $('#invalid-feedback-message').text('Número mínimo de caracteres: 70')
-                } else {
-                    isValid(element)
-                }
-            }
-
-            if ((value.length > 0) && (key == 'inputEmail')) {
-                if (value.match(/^\w+\@\w+\.\D+$/)) {
-                    isValid(element)
-                } else {
-                    isInvalid(element)
-                    $('#invalid-feedback-email').text('Exemplo: meuemail@mail.com')
-                }
-            }
-
-            if ((value.length > 0) && (key == 'inputCell')) {
-                if (value.length == 14) {
-                    isValid(element)
-                } else {
-                    isInvalid(element)
-                    $('#invalid-feedback-cell').text('Exemplo: (55)99999-9999')
+            if (value.length > 0) {
+                if (key == 'inputName') {
+                    if (value.length < 3) {
+                        isInvalid(element)
+                        $('#invalid-feedback-name').text('Número mínimo de caracteres: 3')
+                    } else {
+                        isValid(element)
+                    }
+                } else if (key == 'inputSubject') {
+                    if (value.length < 3) {
+                        isInvalid(element)
+                        $('#invalid-feedback-subject').text('Número mínimo de caracteres: 3')
+                    } else {
+                        isValid(element)
+                    }
+                } else if (key == 'inputMessage') {
+                    if (value.length < 30) {
+                        isInvalid(element)
+                        $('#invalid-feedback-message').text('Número mínimo de caracteres: 30')
+                    } else {
+                        isValid(element)
+                    }
+                } else if (key == 'inputEmail') {
+                    if (value.match(/^\w+\@\w+\.\D+$/)) {
+                        isValid(element)
+                    } else {
+                        isInvalid(element)
+                        $('#invalid-feedback-email').text('Exemplo: meuemail@mail.com')
+                    }
+                } else if (key == 'inputCell') {
+                    if (value.length == 14) {
+                        isValid(element)
+                    } else {
+                        isInvalid(element)
+                        $('#invalid-feedback-cell').text('Exemplo: (55)99999-9999')
+                    }
                 }
             }
         }
@@ -104,8 +102,6 @@ jQuery(function($) {
     /* form subscribe */
     $('#formSubscribe').on('submit', (e) => {
         e.preventDefault()
-
-        let form = $('#formSubscribe')[0]
 
         validateEmail($('#email'))
 
@@ -121,7 +117,6 @@ jQuery(function($) {
 
     $('#formSubscribe').on('input', (e) => {
         e.preventDefault()
-
         validateEmail($('#email'))
     })
 
@@ -161,7 +156,6 @@ jQuery(function($) {
 
     $('#formSubscribeMob').on('input', (e) => {
         e.preventDefault()
-
         validateEmail2($('#email2'))
     })
 
@@ -183,7 +177,6 @@ jQuery(function($) {
         }
     }
 
-    
     /* funções validação */
     function isInvalid(element) {
         element.addClass('is-invalid')
