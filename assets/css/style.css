@@ -169,27 +169,18 @@ textarea {
   padding: .7rem; }
 
 .article__banner {
+  background-image: url(../img/banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 55vh;
+  height: 45vh;
   width: 100%; }
-  @media (max-width: 1300px) {
-    .article__banner {
-      height: 35vh; } }
-  @media (max-width: 800px) {
-    .article__banner {
-      height: 25vh; } }
-  @media (max-width: 450px) {
-    .article__banner {
-      height: 18vh; } }
 .article__body {
   padding: 5rem 10rem 8rem; }
 .article__title {
   font-size: 2rem;
   font-weight: 900; }
 .article__content {
-  font-size: 1.2rem;
-  margin: auto 2rem; }
+  font-size: 1.2rem; }
 .article__author-img {
   max-width: 37px;
   height: auto; }
